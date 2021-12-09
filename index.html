@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .bgcolor {
+      background-color: hsl(217, 54%, 11%);
+      background: url(./design/desktop-design.jpg)c;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .bgcard {
+      background-color: hsl(216, 50%, 16%);
+    }
+
+    .cyan {
+      color: hsl(178, 100%, 50%);
+
+    }
+
+    .light {
+      color: hsl(215, 51%, 70%);
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+
+<body class="bgcolor">
+
+  <main class="flex justify-center items-center">
+    <div class="w-full max-w-md h-auto flex flex-col justify-center items-center px-6 py-10">
+      <div class="bgcard p-8 rounded-2xl space-y-6">
+
+        <div class="relative">
+          <img class="rounded-xl" src="./images/image-equilibrium.jpg" alt="">
+          <div class="absolute cursor-pointer top-0 rounded-xl hover:bg-cyan-300 opacity-0 hover:opacity-60 w-full h-full">
+            <img src="./images/icon-view.svg" class="eye absolute top-1/2 left-1/2 transform cursor-pointer -translate-x-1/2 -translate-y-1/2" alt="">
+          </div>
+
+         </div>
+
+        <div class="text-white text-2xl font-medium hover:text-cyan-300 cursor-pointer">
+          <h1>Equilibrium #3429</h1>
+        </div>
+        <div class="text-gray-500">
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+        </div>
+        <div>
+          <div class="flex justify-between">
+            <div class="cyan flex items-center">
+              <div class="pr-2">
+                <img src="./images/icon-ethereum.svg" alt="">
+              </div>
+              <div>
+                0.041 ETH
+              </div>
+             </div>
+            <div class="flex items-center">
+              <div><img src="./images/icon-clock.svg" alt=""></div>
+              <div class="text-gray-400">
+                <p>3 days left</p>
+              </div>
+            </div>
+          </div>
+          <hr class="w-full px-8 my-4">
+          <div class="text-gray-500 flex items-center">
+            <div class="w-10 h-10 mr-6"><img src="./images/image-avatar.png" alt=""> </div>
+            <div>Creation of <a href="#" class="text-white hover:text-cyan-300">Jules Wyvern</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/sachinshelke7">SACHIN SHELKE</a>.
+    </div>
+  </footer>
+
+</body>
+</html>
